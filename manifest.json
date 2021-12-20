@@ -1,0 +1,10 @@
+{
+    "manifest_version": 2,
+    "name": "Type In Japanese",
+    "description": "Lets the user type in Japanese. Users can choose between Hiragana, Katakana, or Kanji",
+    "version": "1",
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}
