@@ -1,5 +1,13 @@
-document.getElementById('text_input').addEventListener('input', function() {
-    console.log(this.value);
+//https://www.learn-japanese-adventure.com/hiragana-chart.html
+
+//document.getElementById('text_input').addEventListener('input', function() {
+//    console.log(this.value);
+//});
+
+$(document).ready(function(){
+     $("span").click(function () {
+         location.href = "popup2.html";
+     });
 });
 
 
@@ -13,8 +21,9 @@ function contains_double(str){
 }
 
 function first_char(str){
+    const consonants = ['m', 'p', 'b', 't', 'd', 's', 'z', 'r', 'j', 'w', 'h', 'k', 'g'];
     for(var i = 0; i < str.length-1; i ++){
-        if(str.charAt(i) == str.charAt(i + 1)){
+        if(consonants.includes(str.charAt(i)) && str.charAt(i) == str.charAt(i + 1)){
             return str.charAt(i)
         }
     }
@@ -34,6 +43,10 @@ $('body').on('input', 'textarea[name=text_input]', function() {
     $(this).val($(this).val().replace('kya', 'きゃ'));
     $(this).val($(this).val().replace('kyu', 'きゅ'));
     $(this).val($(this).val().replace('kyo', 'きょ'));
+    
+    $(this).val($(this).val().replace('hya', 'ひゃ'));
+    $(this).val($(this).val().replace('hyu', 'ひゅ'));
+    $(this).val($(this).val().replace('hyo', 'ひょ'));
     
     $(this).val($(this).val().replace('gya', 'ぎゃ'));
     $(this).val($(this).val().replace('gyu', 'ぎゅ'));
@@ -129,9 +142,6 @@ $('body').on('input', 'textarea[name=text_input]', function() {
     $(this).val($(this).val().replace('hえ', 'へ'));
     $(this).val($(this).val().replace('hお', 'ほ'));
     
-    $(this).val($(this).val().replace('hyあ', 'ひゃ'));
-    $(this).val($(this).val().replace('hyう', 'ひゅ'));
-    $(this).val($(this).val().replace('hyお', 'ひょ'));
     
     $(this).val($(this).val().replace('bあ', 'ば'));
     $(this).val($(this).val().replace('bい', 'び'));
