@@ -1,8 +1,17 @@
 //https://www.learn-japanese-adventure.com/katakana-chart.html
 
-//document.getElementById('text_input').addEventListener('input', function() {
-//    console.log(this.value);
-//});
+document.getElementById('text_input').addEventListener('input', function() {
+    console.log(getURL());
+    console.log(this.value);
+});
+
+document.getElementById("search").onclick = function () {
+        window.open(getURL(), "_blank");
+};
+
+function getURL(){
+    return "https://www.google.com/search?q=" + $('textarea#text_input').val();
+}
 
 $(document).ready(function(){
     $("span").click(function () {

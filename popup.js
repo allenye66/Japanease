@@ -4,6 +4,15 @@
 //    console.log(this.value);
 //});
 
+
+document.getElementById("search").onclick = function () {
+        window.open(getURL(), "_blank");
+};
+
+function getURL(){
+    return "https://www.google.com/search?q=" + $('textarea#text_input').val();
+}
+
 $(document).ready(function(){
      $("span").click(function () {
          location.href = "popup2.html";
