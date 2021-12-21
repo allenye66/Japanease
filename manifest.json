@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "Type In Japanese",
-    "description": "Lets the user type in Japanese. Users can choose between Hiragana, Katakana, or Kanji",
+    "name": "Japanease",
+    "description": "Lets the user type in Japanese. Users can choose between Hiragana, Katakana, or Kanji. Users can easily copy or search up the things they type.",
     "version": "1",
 
     "browser_action": {
