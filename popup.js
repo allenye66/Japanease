@@ -3,8 +3,23 @@ document.getElementById('text_input').addEventListener('input', function() {
 });
 
 
+function contains_double(str){
+    for(var i = 0; i < str.length-1; i ++){
+        if(str.charAt(i) == str.charAt(i + 1)){
+            return true
+        }
+    }
+    return false
+}
 
 $('body').on('input', 'textarea[name=text_input]', function() {
+    
+    if(contains_double($(this).val())){
+        var temp = first_char($(this).val())
+        console.log("HAS DOUBLE")
+        $(this).val($(this).val().replace(temp, "っ"));
+        
+    }
     
     //higher priority
     $(this).val($(this).val().replace('tsu', 'つ'));
@@ -141,12 +156,10 @@ $('body').on('input', 'textarea[name=text_input]', function() {
     $(this).val($(this).val().replace('rえ', 'れ'));
     $(this).val($(this).val().replace('rお', 'ろ'));
 
-
     
     $(this).val($(this).val().replace('wあ', 'わ'));
     $(this).val($(this).val().replace('wお', 'を'));
     $(this).val($(this).val().replace('n', 'ん'));
-    
     $(this).val($(this).val().replace('.', '。'));
     
     
