@@ -12,6 +12,13 @@ function contains_double(str){
     return false
 }
 
+function first_char(str){
+    for(var i = 0; i < str.length-1; i ++){
+        if(str.charAt(i) == str.charAt(i + 1)){
+            return str.charAt(i)
+        }
+    }
+}
 $('body').on('input', 'textarea[name=text_input]', function() {
     
     if(contains_double($(this).val())){
