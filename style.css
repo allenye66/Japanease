@@ -12,9 +12,17 @@
     width: 400px;
     background-color: aliceblue;
     font-size: 18px;
+    border: 1px solid #ba68c8;
+    border-radius: 5px;
 
 }
-#buttons{
+
+.purple-border textarea {
+    border: 1px solid #ba68c8;
+}
+.purple-border .form-control:focus {
+    border: 1px solid #ba68c8;
+    box-shadow: 0 0 0 0.3rem rgba(186, 104, 200, .25);
 }
 
 
@@ -48,7 +56,6 @@
 }
 
 body {
-    
   color: #313131;
   font-size: 10px;
   font-weight: 600;
@@ -64,7 +71,6 @@ a {
 }
 
 .btn {
-    
   height: 40px;
   line-height: 40px;
   text-align: center;
