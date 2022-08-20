@@ -1,10 +1,22 @@
 # Japanease
-A Google Chrome extension to allow users to easily type in Japanese using Hiragana or Katakana.
+
+### Get it here: https://chrome.google.com/webstore/detail/type-japanese/ilhbdihflmdkeaalnjjbiclonlodghkm
+
+
+
+Last updated: **600+ users**
+
+A Google Chrome extension that allows users to easily type in Japanese using Hiragana or Katakana.
 
 - Using this chrome extension, users can easily type in Japanese without having to switch their computer's entire language
 - Users can type in either Hiragana or Katakana
 - After typing their text, users have the option to search up their text on Google
 - Users can also easily copy the text they typed
+
+
+**Future update: allowing Kanji**
+
+
 
 Examples:
 
