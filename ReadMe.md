@@ -4,7 +4,7 @@
 
 
 
-Last updated: **1200+ users**
+Last updated: **2000+ users**
 
 A Google Chrome extension that allows users to easily type in Japanese using Hiragana or Katakana.
 
